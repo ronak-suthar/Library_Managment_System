@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include"../headers/structures.h"
+#include"../headers/menu.h"
 
 int main(void){
 

@@ -53,7 +53,7 @@ int length(char* ptr){
         len++;ptr++;
     }
 
-    return ptr;
+    return len;
 }
 
 int auth(void){

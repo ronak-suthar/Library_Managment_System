@@ -1,5 +1,6 @@
 #include<stdio.h>
-#include<../headers/structures.h>
+#include<stdlib.h>
+#include"../headers/structures.h"
 
 
 char* get_name(void){

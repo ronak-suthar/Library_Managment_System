@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <../headers/structures.h>
+#include "../headers/structures.h"
 
 void menu(void){
 	//implement here
@@ -13,7 +13,7 @@ void menu(void){
 
 	printf("Welcome to YCCE Library managment System\n");
 
-	printf("Kindly Select your category as a user : ");
+	printf("Kindly Select your category as a user : \n");
 
 	printf("1. Student\n");
 	printf("2. Faculty\n");
