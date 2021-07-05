@@ -22,7 +22,4 @@ typedef struct member{
     category cat;
 }member;
 
-
-
-
 #endif

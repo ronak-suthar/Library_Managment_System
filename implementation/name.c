@@ -18,5 +18,4 @@ char* get_name(void){
     }
 
     return ptr;
-
 }
