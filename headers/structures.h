@@ -1,32 +1,28 @@
 #ifndef STUCTURES_H
 #define STUCTURES_H
 
-struct name{
+typedef struct name{
     char *first;
     char *last;
-};
+}name;
 
-struct book{
+typedef struct book{
     char* title;
     short int id;
     struct name *author;
-};
+}book;
 
-struct member{
-    struct name *s_name;
+typedef enum category{Staff=0,Faculty=1,Student=2} category;
+
+typedef struct member{
+    struct name s_name;
     unsigned int id;
     char *dept;
-};
+    int mobile;
+    category cat;
+}member;
 
-struct student{
-    struct member *s_member;
-    short int yop; //year of passing
-};
 
-struct employee{
-    struct member *e_member;
-    char lib_emp; //library employee : true or false
-};
 
 
 #endif

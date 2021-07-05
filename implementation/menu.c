@@ -27,12 +27,15 @@ void menu(void){
 	if(choice==1)
 	{
 		printf("Welcome to student user dashboard\n");
-		printf("Enter your choice");
+		printf("Transactions that you can perform : \n");
 
-		printf("\n1.Book Issue or Return");
-		printf("\n2.Reissue Book");
-		printf("\n3.Due Date Check");
-		printf("\n4.Fine");
+		printf("1.Book Issue\n");
+		printf("2.Reissue Book\n");
+		printf("3.Book Return\n");
+		printf("3.Due Date Check\n");
+		printf("4.Fine Check\n");
+
+		printf("Enter you choice of transaction : ");
 
 		int student_choice=0;
 		scanf("%d",&student_choice);
@@ -40,15 +43,19 @@ void menu(void){
 		if(student_choice==1){
 			printf("You want to Issue or Return Book!");
 			//Further Display
+		}
 		else if(student_choice==2){
 			printf("You want to Reissue Book!");
 			//Further Display
+		}
 		else if(student_choice==3){
 			printf("You want to check Due Date of Book!");
 			//Further Display
+		}
 		else if(student_choice==4){
 			printf("You want to check the amount of FINE!");
 			//Further Display
+		}
 		else{
 			printf("Enter Valid Choice!");
 		}
@@ -58,40 +65,48 @@ void menu(void){
 	else if(choice==2)
 	{
 		printf("Welcome to Faculty user dashboard\n");
-		printf("Enter your choice : \n");
+		printf("Below are transactions that you can perform : \n");
 
-		printf("\n1.Add New Book");
-		printf("\n2.Update Student's Details");
-		printf("\n3.Update Book Details");
-		printf("\n4.Book Issue or Return");
-		printf("\n5.Reissue Book");
-		printf("\n6.Due Date Check");
-		printf("\n7.Fine");
+		printf("1.Add New Book\n");
+		printf("2.Update Student's Details\n");
+		printf("3.Update Book Details\n");
+		printf("4.Book Issue or Return\n");
+		printf("5.Reissue Book\n");
+		printf("6.Due Date Check\n");
+		printf("7.Fine\n");
 		
+		printf("Enter you choice of transaction : ");
 		int faculty_choice=0;
 		scanf("%d",&faculty_choice);
 
 		if(faculty_choice==1){
 			printf("You Want to Add New Book!");
 			//Further Display
+		}
 		else if(faculty_choice==2){
 			printf("You want to Update Student Details!");
 			//Further Display
+		}
 		else if(faculty_choice==3){
 			printf("You want to Update Book Details!");
 			//Further Display
+		}
 		else if(faculty_choice==4){
 			printf("You want to Issue or Return Book!");
 			//Further Display
+		}
 		else if(faculty_choice==5){
 			printf("You want to Reissue Book!");
 			//Further Display
+		}
 		else if(faculty_choice==6){
 			printf("You want to check Due Date of Book!");
 			//Further Display
+		}
 		else if(faculty_choice==7){
 			printf("You want to check the amount of FINE!");
 			//Further Display
+		}
 		else{
 			printf("Enter Valid Choice!");
 		}
@@ -101,49 +116,58 @@ void menu(void){
 	else if(choice==3)
 	{
 		printf("Welcome to Library Staff user dashboard\n");
-		printf("Enter your choice : ");
+		printf("Below are transactions that you can perform : \n");
 
-		printf("\n1.Add New Book");
-		printf("\n2.Update Student's Details");
-		printf("\n3.Update Book Details");
-		printf("\n4.Book Issue or Return");
-		printf("\n5.Reissue Book");
-		printf("\n6.Due Date Check");
-		printf("\n7.Fine");
-		printf("\n8.Update Employee's Details");
-		printf("\n9.Library Management Details");
+		printf("1.Add New Book\n");
+		printf("2.Update Student's Details\n");
+		printf("3.Update Book Details\n");
+		printf("4.Book Issue or Return\n");
+		printf("5.Reissue Book\n");
+		printf("6.Due Date Check\n");
+		printf("7.Fine\n");
+		printf("8.Update Employee's Details\n");
+		printf("9.Library Management Details\n");
 
-
+		printf("Enter you choice of transaction : ");
 		int staff_choice=0;
 		scanf("%d",&staff_choice);
 
 		if(staff_choice==1){
 			printf("You Want to Add New Book!");
 			//Further Display
+		}
 		else if(staff_choice==2){
 			printf("You want to Update Student Details!");
 			//Further Display
+		}
 		else if(staff_choice==3){
 			printf("You want to Update Book Details!");
 			//Further Display
+		}
 		else if(staff_choice==4){
 			printf("You want to Issue or Return Book!");
 			//Further Display
+		}
 		else if(staff_choice==5){
 			printf("You want to Reissue Book!");
 			//Further Display
+		}
 		else if(staff_choice==6){
 			printf("You want to check Due Date of Book!");
 			//Further Display
+		}
 		else if(staff_choice==7){
 			printf("You want to check the amount of FINE!");
 			//Further Display
+		}
 		else if(staff_choice==8){
 			printf("You want to update Employee's Details");
 			//Further Display
+		}
 		else if(staff_choice==9){
 			printf("You want to go with Library Management Details");
 			//Further Display
+		}
 		else{
 			printf("Enter Valid Choice!");
 		}
