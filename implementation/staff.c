@@ -4,12 +4,10 @@
 #include"../headers/member_details.h"
 
 
-void staff(void){
+void staff(user* staff_user){
     printf("Welcome to Staff Library Managment Section\n");
 
-    member *staff = get_details(0);
-
-    print_details(staff);
+    print_details(staff_user);
 
     //further menu
     printf("Kindly Select the transaction you would like to perform :\n");
@@ -19,6 +17,7 @@ void staff(void){
     printf("3. Add book to Record\n");
     printf("4. Remove book from Record\n");
 
-    free(staff);
+    system("clear");
+    free(staff_user);
 
 }

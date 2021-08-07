@@ -1,8 +1,8 @@
 #ifndef MEMBERS_H
 #define MEMBERS_H
 
-void student(void);
-void faculty(void);
-void staff(void);
+void student(user*);
+void faculty(user*);
+void staff(user*);
 
 #endif

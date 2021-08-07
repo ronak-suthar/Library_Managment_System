@@ -3,12 +3,10 @@
 #include"../headers/structures.h"
 #include"../headers/member_details.h"
 
-void student(void){
+void student(user* student_user){
     printf("Welcome to Students Library Managment Section\n");
 
-    member *student = get_details(2);
-
-    print_details(student);
+    print_details(student_user);
 
     //further menu
     printf("Kindly Select the transaction you would like to perform :\n");
@@ -16,8 +14,11 @@ void student(void){
     printf("1. Issue a Book\n");
     printf("2. Return a Book\n");
     printf("3. Check Fine\n");
+    printf("4. All Issued Books\n");
 
-    
-    free(student);
+    //getchar();
+    //system("clear");
+
+    free(student_user);
 
 }
