@@ -5,4 +5,5 @@ char* get_string(void);
 user* get_details(int);
 void print_details(user*);
 
+
 #endif

@@ -1,16 +1,36 @@
 #include<stdio.h>
 #include<stdlib.h>
-//#include"../headers/structures.h"
 
+void padding(int pad){
+    while(pad--){
+        printf("    ");
+    }
+}
+void new_lines(int lines){
+    while(lines--){
+        printf("\n");
+    }
+}
 int menu(void){
-    printf("*********************Welcome to Library of YCCE*******************\n");
-    
-    for(int i=0;i<3;i++,printf("\n")) ;
+    padding(2);
+    printf("*********************Welcome to Library Managment Software*********************\n");
+    padding(3);
+    printf("-----------------------MAIN MENU ----------------------------\n");
+
+    new_lines(2);
 
     printf("Kindly Select your category to move ahead : \n");
+
+    padding(2);
     printf("1. Library Staff\n");
+
+    padding(2);
     printf("2. Faculty\n");
+
+    padding(2);
     printf("3. Student\n");
+
+    padding(2);
     printf("4. Exit this program\n");
 
     int choice=0;
@@ -21,6 +41,8 @@ int menu(void){
         exit(1);
     }
 
+    printf("Press Any Key To Move Ahead\n");
+    getchar();
     system("clear||cls");
 
     return choice-1;

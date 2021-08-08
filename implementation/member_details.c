@@ -2,6 +2,8 @@
 #include<stdlib.h>
 #include<string.h>
 #include"../headers/structures.h"
+#include"../headers/menu.h"
+
 /*
 char* get_string(void){
     char* ptr;char ltr=0;int size=10,len=0;
@@ -21,6 +23,8 @@ char* get_string(void){
 
 }
 */
+
+
 user* get_details(int cat){
     printf("Welcome to Details Section\n");
     
@@ -64,10 +68,18 @@ void print_details(user* person){
     if(person==NULL){
         return;
     }
-
+    new_lines(2);padding(1);
     printf("-------------------------------------------\n");
-    printf("Full Name : %s %s\n",person->personal_details.s_name.first,person->personal_details.s_name.last);
-    printf("Registration ID : %d ,Department : %s\n",person->personal_details.id,person->personal_details.dept);
-    printf("Mobile Number : %ld\n",person->personal_details.mobile);
+
+    new_lines(1);padding(1);
+    printf("|| Full Name : %s %s ||\n",person->personal_details.s_name.first,person->personal_details.s_name.last);
+    
+    new_lines(1);padding(1);
+    printf("|| Registration ID : %d ,Department : %s ||\n",person->personal_details.id,person->personal_details.dept);
+    
+    new_lines(1);padding(1);
+    printf("|| Mobile Number : %ld ||\n",person->personal_details.mobile);
+    
+    new_lines(1);padding(1);
     printf("-------------------------------------------\n");
 }
