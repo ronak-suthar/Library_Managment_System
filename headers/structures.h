@@ -8,7 +8,7 @@ typedef struct name{
 }name;
 
 typedef struct books{
-    char title[15];
+    char title[30];
     struct name author;
     int book_uid;
 }books;

@@ -7,5 +7,6 @@
 
 void auth(int);
 struct user* find_user(int);
+struct user* find_user(int);
 
 #endif

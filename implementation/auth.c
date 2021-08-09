@@ -21,6 +21,7 @@ user* find_user(int id){
     while (fread(finder,sizeof(user),1,ptr)==1)
     {   
         if(finder->personal_details.id==id){
+            fclose(ptr);
             return finder;
         }
     }
@@ -90,7 +91,14 @@ void auth(int cat){
     else{   
             new_lines(2);padding(1);
             printf("Record doesn't exist in system kindly provide details to create\n");
+            
+            printf("Press Any Key to Continue\n");
+            getchar();
+            
+            system("clear");
 
+            printf("Provide Details to Create New Record of User\n");
+            
             FILE* ptr = fopen("files/users.dat","a");
 
             user_data = (user*) malloc(sizeof(user));
@@ -107,7 +115,6 @@ void auth(int cat){
     int user_type = user_data->personal_details.cat;
 
     if(user_type==0){//Staff
-        printf("Staff Called\n");
         staff(user_data);
     }
     else if(user_type==1){//Faculty
