@@ -1,5 +1,8 @@
 # Library Managment Software
 
+Developed a Library Management Application that provides features like User Authentication, Issue, Return, Add and View
+Books in Record for a Book Library
+
 - Language & Tool : ![C Labguage](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)![VS Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
 
 - Prequiste installations required to run the program are Git,GCC Complier
